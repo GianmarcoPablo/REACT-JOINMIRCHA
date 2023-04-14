@@ -1,6 +1,9 @@
 import React from "react";
 import Componente from "./components/Componente";
 import Propiedades from "./components/Propiedades";
+import Estado from "./components/Estado";
+import RenderizadoCondicional from "./components/RenderizadoCondicional";
+import RenderizadoElementos from "./components/RenderizadoElementos";
 
 const App = () => {
     const meses = ["Enero", "Febrero", "Marzo", "Abril"];
@@ -29,6 +32,12 @@ const App = () => {
                 funcion= {num=> num * num}
                 componenteReact={<Componente msg="soy un componente pasado como prop"/>}
             />
+            <hr />
+            <Estado/>
+            <hr />
+            <RenderizadoCondicional/>
+            <hr />
+            <RenderizadoElementos/>
         </div>
     );
 };
